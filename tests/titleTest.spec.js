@@ -11,8 +11,7 @@ const { Builder, By, until } = require('selenium-webdriver');
         .setChromeOptions(new chrome.Options().addArguments(
             '--headless',
             '--no-sandbox',
-            `--user-data-dir=/tmp/chrome-user-data-${Date.now()}`
-            `--binary=/usr/bin/chromium-browser`
+            `--user-data-dir=/tmp/chrome-user-data-${Date.now()}`,
         ))
         .build();
     });
